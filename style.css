@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Свой градиент (можно сгенерировать на gradients.app) */
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    /* Своя тень — бирюзовая */
+    box-shadow: 0 15px 25px rgba(0, 255, 200, 0.35);
+    max-width: 400px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Своя обводка — бирюзовая вместо жёлтой */
+    border: 3px solid #00ffc8;
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+}
+
+h1 {
+    margin: 20px 0 5px;
+    font-size: 28px;
+}
+
+p {
+    margin: 0 0 20px;
+    opacity: 0.8;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 8px 0;
+    opacity: 0.9;
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(0, 255, 200, 0.15);
+    color: #00ffc8;
+    border: 1px solid #00ffc8;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #00ffc8;
+    color: #0f2027;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 255, 200, 0.4);
+}
